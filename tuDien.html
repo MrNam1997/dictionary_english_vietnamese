@@ -8,20 +8,20 @@
 <script>
     function dictionary() {
         let findDictionary = prompt("Enter the word to search:");
-        let englishArr = ["car", "motobike", "ariport"];
-        let vietnamesehArr = ["oto", "xemay", "maybay"];
+        let englishArr = ["car", "motobike", "airport"];
+        let vietnameseArr = ["oto", "xemay", "maybay"];
+        let check = false;
         for (let i = 0; i < englishArr.length; i++) {
             if (findDictionary == englishArr[i]) {
-                alert(englishArr[i] + " " + vietnamesehArr[i]);
-                break;
-            } else {
-                alert("not found!");
-                break;
+                check = true;
+                alert( englishArr[i] + " tiếng việt là: "+vietnameseArr[i]);
             }
+        } if (check == false){
+            alert("Not found!");
         }
     }
-
     dictionary();
+
 </script>
 
 </body>
