@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>từ điển Anh _ Việt</title>
+</head>
+<body>
+<script>
+    function dictionary() {
+        let findDictionary = prompt("Enter the word to search:");
+        let englishArr = ["car", "motobike", "ariport"];
+        let vietnamesehArr = ["oto", "xemay", "maybay"];
+        for (let i = 0; i < englishArr.length; i++) {
+            if (findDictionary == englishArr[i]) {
+                alert(englishArr[i] + " " + vietnamesehArr[i]);
+                break;
+            } else {
+                alert("not found!");
+                break;
+            }
+        }
+    }
+
+    dictionary();
+</script>
+
+</body>
+</html>
